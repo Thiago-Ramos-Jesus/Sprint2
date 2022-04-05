@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  color: white;
+}
+.header {
+  height: 90px;
+  width: 100%;
+  background-image: url(../imgs/header-footer/header.png);
+  background-size: cover;
+  border-bottom: 3px solid #8008ff;
+}
+.container {
+  width: 90%;
+  display: flex;
+}
+.header .container {
+  justify-content: space-between;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+}
+.header img {
+  height: 58%;
+}
+
+.navbar_header {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  width: 600px;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+.navbar_header hr {
+  background-color: white;
+  height: 10px;
+  width: 1px;
+  border: 0;
+  margin: 0;
+}
+.footer {
+  background-image: url(../imgs/header-footer/footer.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 13px;
+  border-top: 3px solid #8008ff;
+  width: 100%;
+}
+.footer .container {
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .box {
+  width: 18%;
+}
+.footer .reports {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reports img {
+  height: 20px;
+}
+.reports p {
+  margin: 0;
+}
+.contato {
+  flex-flow: row wrap;
+  text-align: center;
+}
+.contato h4 {
+  margin: 0;
+}
+.contato hr {
+  margin-top: 0;
+  width: 100%;
+}
+.contato h5 {
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+.contato img {
+  height: 16px;
+  margin-right: 1px;
+}
+.footer .box h2 img {
+  height: 2%;
+  width: 26%;
+}
+.box h2 {
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+.banner {
+  height: 556px;
+}
