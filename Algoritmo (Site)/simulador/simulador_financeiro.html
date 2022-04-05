@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        Quantidade do tecido armazenado: <input id="input_qntTecido" placeholder="Quantidade em Kg">
+        <br>
+        <br>
+        Valor do tecido: <input id="input_valorTecido" placeholder="Valor por Kg">
+        <br>
+        <br>
+        Quantidade descartada: <input id="input_tecidoDescartado" placeholder="Quantidade em Kg">
+        <br>
+        <br>
+        <button onclick="calc()">Calcular</button>
+    <div id="resultado">
+
+    </div> 
+    </div>
+</body>
+</html>
+
+<script>
+    function calc() {
+        var qntTecido = Number(input_qntTecido.value)
+        var valorTecido = Number(input_valorTecido.value)
+        var tecidoDescartado = Number(input_tecidoDescartado.value)
+
+        lucroTotal = qntTecido * valorTecido 
+        percaLucro = tecidoDescartado * valorTecido
+        porcentagem = percaLucro*100/lucroTotal
+
+        resultado.innerHTML = `
+        Sua perca foi de ${percaLucro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})},
+        que equivale a ${porcentagem}% do seu lucro total`
+    }
+</script>
