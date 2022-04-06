@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="">
-        Quantidade do tecido armazenado: <input id="input_qntTecido" placeholder="Quantidade em Kg">
-        <br>
-        <br>
-        Valor do tecido: <input id="input_valorTecido" placeholder="Valor por Kg">
-        <br>
-        <br>
-        Quantidade descartada: <input id="input_tecidoDescartado" placeholder="Quantidade em Kg">
-        <br>
-        <br>
-        <button onclick="calc()">Calcular</button>
-    <div id="resultado">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Simulador Financeiro</h2>
+        <div class="form-box">
+          Quantidade do tecido armazenado:
+          <input id="input_qntTecido" placeholder="Quantidade por Tonelada" />
+          Valor do tecido:
+          <input id="input_valorTecido" placeholder="Valor por Tonelada" />
+          Quantidade de tecido descartado:
+          <input
+            id="input_tecidoDescartado"
+            placeholder="Quantidade por Tonelada"
+          />
 
-    </div> 
+          <button onclick="calc()">Calcular</button>
+          <div id="resultado"></div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 
 <script>
-    function calc() {
-        var qntTecido = Number(input_qntTecido.value)
-        var valorTecido = Number(input_valorTecido.value)
-        var tecidoDescartado = Number(input_tecidoDescartado.value)
+  function calc() {
+    var qntTecido = Number(input_qntTecido.value);
+    var valorTecido = Number(input_valorTecido.value);
+    var tecidoDescartado = Number(input_tecidoDescartado.value);
 
-        lucroTotal = qntTecido * valorTecido 
-        percaLucro = tecidoDescartado * valorTecido
-        porcentagem = percaLucro*100/lucroTotal
+    lucroTotal = qntTecido * valorTecido;
+    percaLucro = tecidoDescartado * valorTecido;
+    porcentagem = (percaLucro * 100) / lucroTotal;
+    lucroAtual = lucroTotal - percaLucro;
 
-        resultado.innerHTML = `
-        Sua perca foi de ${percaLucro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})},
-        que equivale a ${porcentagem}% do seu lucro total`
-    }
+    resultado.innerHTML = `
+        Seu lucro atual sem o nosso serviço é de 
+        ${lucroAtual.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        })}.
+        <br>
+        <br>
+        Seu lucro total com nosso produto seria de 
+        ${lucroTotal.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        })}, 
+        que equivale a 
+        ${porcentagem.toFixed(0)}%
+        a mais no seu lucro atual, simbolizando um aumento de 
+        ${percaLucro.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        })}.
+        `;
+  }
 </script>
