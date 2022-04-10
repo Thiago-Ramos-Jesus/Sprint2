@@ -1,0 +1,217 @@
+@font-face {
+  font-family: Carme;
+  src: url(fonts/Carme-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: #e5eef0;
+  font-family: Carme;
+}
+
+.header {
+  height: 90px;
+  width: 100%;
+  background-image: url(imagens/header_footer/tecido_azul.jpg);
+  background-size: cover;
+  border-bottom: 3px solid #ffffff;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+}
+
+.header .container {
+  justify-content: space-between;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+.header img {
+  height: 58%;
+}
+
+.navbar_header {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  width: 600px;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.navbar_header hr {
+  background-color: white;
+  height: 10px;
+  width: 1px;
+  border: 0;
+  margin: 0;
+}
+
+.footer {
+  background-image: url(imagens/header_footer/tecido_azul.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 13px;
+  border-top: 3px solid #ffffff;
+  width: 100%;
+}
+
+.footer .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .box {
+  width: 18%;
+}
+
+.footer .reports {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reports img {
+  height: 20px;
+}
+
+.reports p {
+  margin: 0;
+}
+
+.contato {
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.contato h4 {
+  margin: 0;
+}
+
+.contato hr {
+  margin-top: 0;
+  width: 100%;
+}
+
+.contato h5 {
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+
+.contato img {
+  height: 16px;
+  margin-right: 1px;
+}
+
+.footer .box h2 img {
+  height: 2%;
+  width: 26%;
+}
+
+.box h2 {
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+
+.banner {
+  display: flex;
+  height: 750px;
+  background-color: #e5eef0;
+  background-size:cover;
+  justify-content: center;
+}
+
+.banner .card {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(3, 115, 140, 0.55);
+  color: white; 
+  border-radius: 10px;
+  padding: 30px;
+  font-family: Carme;
+}
+
+.banner .card2 {
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(3, 115, 140, 0.55);
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  font-family: Carme;
+}
+
+.card .form-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Carme;
+}
+.card2 .form-box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Carme;
+}
+
+input {
+  height:30px;
+  border: none;
+  border-radius: 8px;
+  font-family: Carme;
+  background-color: #e5eef0;
+  color: gray;
+}
+
+h4 {
+  color: white;
+  font-weight: 100;
+  font-family: Carme;
+}
+
+h2 {
+  font-weight:400;
+  font-family: Carme;
+}
+
+.btn {
+  display: flex;
+  margin-top: 30px;
+  border-radius: 3px;
+  color: white;
+  background-color: #027C93 ;
+  border: #024959 solid 3px;
+  font-family: Carme;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  font-size: 18px;
+}
+
+.form-box .resul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  font-family: Carme;
+  font-weight: 200px;
+}
+
